@@ -9,6 +9,7 @@ import Alfred from '../Alfred';
 export default class Chat extends Component {
   state = {
     messages: [],
+    hidden: false,
   };
 
   conection = new WebSocket('ws://localhost:8888/websocket');
@@ -30,13 +31,26 @@ export default class Chat extends Component {
     this.setState({ messages: [] });
   };
 
+  handleHidden = () => {
+    this.setState({ hidden: !this.state.hidden });
+    console.log(this.state.hidden);
+  };
+
   render() {
     return (
       <>
         <Content>
-          <DisplayConversation message={this.state.messages} />
-          <MessaginBox getMessage={this.getMessage} />
-          <Alfred />
+          <div>
+            <DisplayConversation message={this.state.messages} />
+            {this.state.hidden === false ? (
+              <MessaginBox getMessage={this.getMessage} />
+            ) : (
+              <> </>
+            )}
+          </div>
+          <button id="afs" onClick={this.handleHidden}>
+            <Alfred />
+          </button>
         </Content>
       </>
     );

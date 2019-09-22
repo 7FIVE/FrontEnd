@@ -5,7 +5,7 @@ import Chat from '../interfaceChat';
 
 export default class Main extends Component {
   state = {
-    username: '',
+    username: 'vg',
   };
 
   setUsername = username => {
