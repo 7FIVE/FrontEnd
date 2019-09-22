@@ -1,5 +1,26 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-const Main = () => <div />;
+import Login from '../Login';
+import Chat from '../interfaceChat';
 
-export default Main;
+export default class Main extends Component {
+  state = {
+    username: '',
+  };
+
+  setUsername = username => {
+    this.setState({ username });
+  };
+
+  render() {
+    return (
+      <>
+        {!this.state.username ? (
+          <Login setUsername={this.setUsername} />
+        ) : (
+          <Chat username={this.state.username} />
+        )}
+      </>
+    );
+  }
+}
