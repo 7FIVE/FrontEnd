@@ -6,5 +6,9 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7);
-  background-color: #4d4d4d;
+  background-image: linear-gradient(#464646, #0e0e0e);
+
+  img {
+    height: 125px;
+  }
 `;
