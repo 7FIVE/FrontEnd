@@ -17,7 +17,7 @@ export default class Chat extends Component {
       <MessaginBox id="messaginBox">
         <input
           onKeyDown={this.messageHandler}
-          placeholder="Digite sua mensagem e aperte enter para enviar"
+          placeholder="Digite sua mensagem..."
         />
       </MessaginBox>
     );

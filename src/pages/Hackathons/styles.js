@@ -40,6 +40,7 @@ export const Items = styled.div`
     flex-direction: column;
     justify-content: flex-end;
     margin-bottom: 0.7rem;
+    margin-right: 0.7rem;
   }
 
   div#status span {
@@ -47,7 +48,7 @@ export const Items = styled.div`
     background: #000;
     box-shadow: 1px 1px 6px #fff;
     border-radius: 10px;
-    padding: 0.6rem;
+    padding: 0.7rem;
     font-size: 0.8rem;
     display: flex;
     justify-content: center;
