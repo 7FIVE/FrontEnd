@@ -24,7 +24,7 @@ export const ListHeader = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: linear-gradient(#fff, #b5b5b5);
+  background-image: linear-gradient(#dedddd, #4e4d4d);
   height: 75px;
   width: 100%;
   font-size: 30px;
@@ -36,7 +36,7 @@ export const ListItems = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  background-image: linear-gradient(#fff, #b5b5b5);
+  background-image: linear-gradient(#dedddd, #4e4d4d);
   height: 100%;
   width: 100%;
   border: 3px solid #000;
@@ -52,4 +52,5 @@ export const Entry = styled.div`
   height: 50px;
   width: 80%;
   font-size: 18px;
+  cursor: pointer;
 `;
