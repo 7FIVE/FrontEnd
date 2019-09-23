@@ -19,10 +19,10 @@ export default class Hackathons extends Component {
             <div id="container">
               <div id="title">
                 <p>Open Hack - Hackathon</p>
-                <span>Inscrições encerradas</span>
+                <span>Registrations closed</span>
               </div>
               <div id="status">
-                <span>Participando</span>
+                <span>Joined</span>
               </div>
             </div>
           </Items>
