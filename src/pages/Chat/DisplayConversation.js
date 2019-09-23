@@ -8,11 +8,8 @@ export default class Chat extends Component {
       <AreaMessage>
         {this.props.message.map(msg => (
           <>
-            <div className="userName">
-              <span>{msg.user} </span>
-            </div>
-            <div className="msg">
-              <p>{msg.message}</p>
+            <div className="msg" key={msg.id}>
+              <p>{msg.user === 'Alfred' ? msg.message : <></>}</p>
             </div>
           </>
         ))}

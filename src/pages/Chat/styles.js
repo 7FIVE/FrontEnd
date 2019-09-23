@@ -2,19 +2,37 @@ import styled from 'styled-components';
 
 export const Content = styled.div`
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   width: 30%;
   justify-content: flex-end;
-  align-items: center;
-  height: 80%;
+  align-items: flex-end;
+  height: 50%;
   margin-bottom: 2rem;
+  div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  div:last-child {
+    width: auto;
+  }
+  div.is {
+    width: 100%;
+  }
+  #afs {
+    background: none;
+    border: none;
+  }
+  #id {
+    display: none;
+    transition: all 0.1s ease-in-out;
+  }
 `;
 
 export const MessaginBox = styled.div`
-  width: 80%;
+  width: 100%;
   display: flex;
   flex-direction: row;
-
   input {
     width: 100%;
     border: none;
@@ -28,18 +46,16 @@ export const AreaMessage = styled.div`
   width: 80%;
   display: flex;
   flex-direction: column;
-  margin-bottom: 1rem;
-  overflow-y: auto;
-  .userName {
-    padding: 0.2rem 0.2rem 0.2rem 1rem;
-    opacity: 0.5;
-    font-size: 1rem;
-  }
+  margin-bottom: 5rem;
   .msg {
-    background: #aa38c8;
-    border-radius: 5px;
+    background: #fff;
+    border-radius: 10px;
     padding: 1rem;
     font-size: 1.2rem;
-    color: #fff;
+    color: #000;
+    margin-right: -1rem;
+  }
+  .msg:first-child {
+    display: none;
   }
 `;

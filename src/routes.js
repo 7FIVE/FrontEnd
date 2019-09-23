@@ -1,8 +1,6 @@
 import React from 'react';
 import { Switch, Route, BrowserRouter } from 'react-router-dom';
 
-import Chat from './pages/Chat';
-import Main from './pages/Main';
 import Hackathons from './pages/Hackathons';
 import Mentores from './pages/Mentores';
 import Jurados from './pages/Jurados';

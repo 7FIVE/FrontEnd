@@ -5,6 +5,7 @@ import { Wrapper } from '../../styles/components';
 import Header from '../../components/Header';
 import Sidebar from '../../components/Sidebar';
 import { Items } from './styles';
+import ChatBot from '../interfaceChat';
 // import { Container } from './styles';
 
 export default class Hackathons extends Component {
@@ -25,6 +26,7 @@ export default class Hackathons extends Component {
                 <span>Joined</span>
               </div>
             </div>
+            <ChatBot />
           </Items>
         </Wrapper>
       </>
