@@ -22,7 +22,7 @@ export default class Chat extends Component {
   }
 
   getMessage = message => {
-    const data = { id: '999', user: this.props.username, message };
+    const data = { id: '999', user: 'Leonardo', message };
     this.conection.onopen = () => {
       this.conection.send(JSON.stringify('conectionON'));
     };

@@ -17,7 +17,7 @@ export default class interfaceChat extends Component {
         <Wrapper>
           <Sidebar />
           <Items>
-            <Chat username={this.props.username} />
+            <Chat username="Leonardo" />
           </Items>
         </Wrapper>
       </>

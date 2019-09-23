@@ -7,14 +7,18 @@ import Hackathons from './pages/Hackathons';
 import Mentores from './pages/Mentores';
 import Jurados from './pages/Jurados';
 import Times from './pages/Times';
+import TodoList from './pages/TodoList';
 
 export default function Routes() {
   return (
-    <Switch>
-      <Route path="/" component={Hackathons} />
-      <Route path="/mentors" exact component={Mentores} />
-      <Route path="/jurors" exact component={Jurados} />
-      <Route path="/teams" exact component={Times} />
-    </Switch>
+    <BrowserRouter>
+      <Switch>
+        <Route path="/" exact component={Hackathons} />
+        <Route path="/mentors" exact component={Mentores} />
+        <Route path="/jurors" exact component={Jurados} />
+        <Route path="/teams" exact component={Times} />
+        <Route path="/todolist" exact component={TodoList} />
+      </Switch>
+    </BrowserRouter>
   );
 }
