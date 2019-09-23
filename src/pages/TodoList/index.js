@@ -5,7 +5,7 @@ import GlobalStyle from '../../styles/global';
 import { Wrapper } from '../../styles/components';
 import TopHeader from '../../components/Header';
 import Sidebar from '../../components/Sidebar';
-
+import ChatBot from '../interfaceChat';
 import { todo, progress, done } from './constants';
 
 const TodoList = () => (
@@ -39,6 +39,7 @@ const TodoList = () => (
             ))}
           </ListItems>
         </List>
+        <ChatBot />
       </Container>
     </Wrapper>
   </>

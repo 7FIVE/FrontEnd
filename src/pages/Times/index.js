@@ -14,6 +14,7 @@ import GlobalStyle from '../../styles/global';
 import { Wrapper } from '../../styles/components';
 import TopHeader from '../../components/Header';
 import Sidebar from '../../components/Sidebar';
+import ChatBot from '../interfaceChat';
 
 const Times = () => (
   <>
@@ -53,6 +54,7 @@ const Times = () => (
             ))}
           </Content>
         </Right>
+        <ChatBot />
       </Container>
     </Wrapper>
   </>
